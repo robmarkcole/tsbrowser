@@ -37,11 +37,16 @@ This creates a `tsbrowser_demo_setup/` directory containing the raster stacks, s
 ### 2. Run the default-mode example
 
 ```bash
+rm -rf tsbrowser_demo_setup/flags-demo/  # start fresh
 cd tsbrowser_demo_setup
 uv run tsbrowser demo_config_default.py
 ```
 
 This configuration expects on-the-fly QA evaluation and points the CLI to the `vector/demo_points.shp` shapefile together with Sentinel-2 L2A chips stored in `raster/imagery-default-mode/`. Use `--pid <id>` to open specific samples or leave it out to iterate through all unflagged features.
+
+<p align="center">
+<img src="docs/img/demo.png" width="1000">
+</p>
 
 ### 3. Try the legacy-mode example
 
